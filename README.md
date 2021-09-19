@@ -2,4 +2,4 @@
 
 ToDo:
 
-[ ] Add WebUntis api usage
+- [ ] Add WebUntis api usage
