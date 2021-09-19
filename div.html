@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/div.css" rel="stylesheet" type="text/css">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/c12187b7c0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- Banner -->
+
+    <div id="banner" ; class="margin">
+        <p class="headline">Banner</p>
+    </div>
+
+
+    <!-- Main text area of the page -->
+
+    <div id=main class=margin>
+
+        <form>
+
+            <table height=100>
+                <tr>
+                    <td width=80>Name:</td>
+                    <td align=right><input id=name name="Name" size=20 maxlenght=15 type=text></td>
+                </tr>
+                <tr>
+                    <td>Vorname:</td>
+                    <td align=right><input id=vname name="Vorname" size=20 maxlenght=15 type=text></td>
+                </tr>
+                <tr>
+                    <td>Klasse:</td>
+                    <td align=right><select id=class name="Klasse">
+                            <option Value="5"> 5 </option>
+                            <option Value="6"> 6 </option>
+                            <option Value="7"> 7 </option>
+                            <option Value="8"> 8 </option>
+                            <option Value="9"> 9 </option>
+                            <option Value="10"> 10 </option>
+                            <option Value="11"> 11 </option>
+                            <option Value="12"> 12 </option>
+                            <option Value="13"> 13 </option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+        <br>
+        <button id="button1" type="button" onclick="console.log(document.getElementById('name').value); console.log(document.getElementById('vname').value); console.log(document.getElementById('class').value); document.getElementById('name').value = ''; document.getElementById('vname').value = ''; document.getElementById('class').value = '5'">Submit</button>
+
+    </div>
+
+
+    <!-- Sidebar menu -->
+
+    <div id=menu>
+        <p id=menuheadline> Menu </p>
+        <br>
+        <a href="st.html">
+            <p align=left> Stundenplan </p>
+        </a>
+    </div>
+
+</body>
