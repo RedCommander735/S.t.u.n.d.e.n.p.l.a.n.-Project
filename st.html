@@ -202,15 +202,15 @@
         var week = isOdd(result);
         console.log(week)
 
-        if (week == 0) {
+        if (week == 1) {
             $(document).ready(function() {
                 $("#even").hide();
             });
         }
 
-        if (week == 1) {
+        if (week == 0) {
             $(document).ready(function() {
-                $("#even").hide();
+                $("#odd").hide();
             });
         }
 
