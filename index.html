@@ -7,6 +7,26 @@
     <title>Home</title>
     <script src="https://kit.fontawesome.com/c12187b7c0.js" crossorigin="anonymous"></script>
 
+    <script language="JavaScript">
+        function aaabbb() {
+
+            var vname = document.getElementById('vname').value;
+            var zahl = document.getElementById('zahl').value;
+            var klasse = document.getElementById('class').value;
+            var name = document.getElementById('name').value;
+            window.alert('liebe/r ' + vname);
+
+
+            var wert = parseInt(zahl);
+            if (wert < 10) {
+                window.alert("kleiner als 10");
+            } else {
+                window.alert("größer als 10");
+            }
+
+        }
+    </script>
+
 </head>
 
 <body>
@@ -34,6 +54,10 @@
                     <td align=right><input id=vname name="Vorname" size=20 maxlenght=15 type=text></td>
                 </tr>
                 <tr>
+                    <td>Lieblingszahl:</td>
+                    <td align=right><input id=zahl name="Lieblingszahl" size=4 maxlenght=6 type=text></td>
+                </tr>
+                <tr>
                     <td>Klasse:</td>
                     <td align=right><select id=class name="Klasse">
                             <option Value="5"> 5 </option>
@@ -48,11 +72,13 @@
                         </select>
                     </td>
                 </tr>
-            </table>
 
+            </table>
+            <br>
+            <input type="button" align="bottom" id="button1" value="submit" onclick="aaabbb()" name="submit" value="submit">
         </form>
-        <br>
-        <button id="button1" type="button" onclick="console.log(document.getElementById('name').value); console.log(document.getElementById('vname').value); console.log(document.getElementById('class').value); document.getElementById('name').value = ''; document.getElementById('vname').value = ''; document.getElementById('class').value = '5'">Submit</button>
+
+
 
     </div>
 
