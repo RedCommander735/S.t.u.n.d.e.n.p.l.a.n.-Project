@@ -1,96 +1,124 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <link href="css/div.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta chars et="UTF-8" />
+    <link href="css/div.css" rel="stylesheet" type="text/css" />
     <title>Home</title>
-    <script src="https://kit.fontawesome.com/c12187b7c0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c12187b7c0.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <script language="JavaScript">
-        function aaabbb() {
+    <script>
+      function send() {
+        var vname = document.getElementById("vname").value;
+        var zahl = document.getElementById("zahl").value;
+        var klasse = document.getElementById("class").value;
+        var name = document.getElementById("name").value;
 
-            var vname = document.getElementById('vname').value;
-            var zahl = document.getElementById('zahl').value;
-            var klasse = document.getElementById('class').value;
-            var name = document.getElementById('name').value;
-            window.alert('liebe/r ' + vname);
+        window.alert("liebe/r " + vname);
 
-
-            var wert = parseInt(zahl);
-            if (wert < 10) {
-                window.alert("kleiner als 10");
-            } else {
-                window.alert("größer als 10");
-            }
-
+        var wert = parseInt(zahl);
+        if (wert < 10) {
+          window.alert("kleiner als 10");
         }
+        if (wer > 10) {
+          window.alert("größer als 10");
+        }
+        document.getElementById("vname").value = "";
+        document.getElementById("zahl").value = "";
+        document.getElementById("class").value = "";
+        document.getElementById("name").value = "";
+      }
     </script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- Banner -->
 
     <div id="banner" ; class="margin">
-        <p class="headline">Banner</p>
+      <p class="headline">Banner</p>
     </div>
-
 
     <!-- Main text area of the page -->
 
-    <div id=main class=margin>
-
-        <form>
-
-            <table height=100>
-                <tr>
-                    <td width=80>Name:</td>
-                    <td align=right><input id=name name="Name" size=20 maxlenght=15 type=text></td>
-                </tr>
-                <tr>
-                    <td>Vorname:</td>
-                    <td align=right><input id=vname name="Vorname" size=20 maxlenght=15 type=text></td>
-                </tr>
-                <tr>
-                    <td>Lieblingszahl:</td>
-                    <td align=right><input id=zahl name="Lieblingszahl" size=4 maxlenght=6 type=text></td>
-                </tr>
-                <tr>
-                    <td>Klasse:</td>
-                    <td align=right><select id=class name="Klasse">
-                            <option Value="5"> 5 </option>
-                            <option Value="6"> 6 </option>
-                            <option Value="7"> 7 </option>
-                            <option Value="8"> 8 </option>
-                            <option Value="9"> 9 </option>
-                            <option Value="10"> 10 </option>
-                            <option Value="11"> 11 </option>
-                            <option Value="12"> 12 </option>
-                            <option Value="13"> 13 </option>
-                        </select>
-                    </td>
-                </tr>
-
-            </table>
-            <br>
-            <input type="button" align="bottom" id="button1" value="submit" onclick="aaabbb()" name="submit" value="submit">
-        </form>
-
-
-
+    <div id="main" class="margin">
+      <form>
+        <table height="100">
+          <tr>
+            <td width="80">Name:</td>
+            <td align="right">
+              <input
+                id="name"
+                name="Name"
+                size="20"
+                maxlenght="15"
+                type="text"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Vorname:</td>
+            <td align="right">
+              <input
+                id="vname"
+                name="Vorname"
+                size="20"
+                maxlenght="15"
+                type="text"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Lieblingszahl:</td>
+            <td align="right">
+              <input
+                id="zahl"
+                name="Lieblingszahl"
+                size="4"
+                maxlenght="6"
+                type="text"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Klasse:</td>
+            <td align="right">
+              <select id="class" name="Klasse">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <input
+          type="button"
+          align="bottom"
+          id="button1"
+          value="submit"
+          onclick="send()"
+          name="submit"
+          value="submit"
+        />
+      </form>
     </div>
-
 
     <!-- Sidebar menu -->
 
-    <div id=menu>
-        <p id=menuheadline> Menu </p>
-        <br>
-        <a href="st.html">
-            <p align=left> Stundenplan </p>
-        </a>
+    <div id="menu">
+      <p id="menuheadline">Menu</p>
+      <br />
+      <a href="st.html">
+        <p align="left">Stundenplan</p>
+      </a>
     </div>
-
-</body>
+  </body>
+</html>
